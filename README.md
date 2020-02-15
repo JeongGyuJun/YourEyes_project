@@ -21,26 +21,24 @@
 3. 세부 수행 내역
 4. 이미지 분석을 통한 상황 알림이
 
-![image](https://user-images.githubusercontent.com/45933225/74583780-fd23cc00-500d-11ea-8511-d48e63bddde3.png)
-![image](https://user-images.githubusercontent.com/45933225/74583782-00b75300-500e-11ea-949d-3fb7947a78b2.png)
 
 #### 서버 
-▷ 사용 언어: 파이썬 
-▷ 개발 환경: Microsoft Azure Claude Computer
-▷ 사용 Open API: 재난예비특보조회 서비스(공공데이터포털 Open API)
+- 사용 언어: 파이썬 
+- 개발 환경: Microsoft Azure Claude Computer
+- 사용 Open API: 재난예비특보조회 서비스(공공데이터포털 Open API)
 사용자의 어플리케이션에서 현재 위치를 전송 시 해당위치에 해당되는 재난 특보를 조회하여 전송클라이언트
-▷ 사용 Open API: 대기오염정보 조회 서비스(공공데이터포털 Open API) 사용자의 어플리케이션에서 데이터 요청 시 금일 미세먼지 상태를 조회하여 전송
+- 사용 Open API: 대기오염정보 조회 서비스(공공데이터포털 Open API) 사용자의 어플리케이션에서 데이터 요청 시 금일 미세먼지 상태를 조회하여 전송
 서버
-▷ 사용 Open API: Azure Storage(저장소), Computer Vision API(이미지 분석), Naver Papago NMT번역(인공신경망 기반 기계번역), 어플리케이션(클라이언트)으로 수신된 사진파일을 분석한 영어 텍스트를 한글 텍스트로 번역하여 재전송
+- 사용 Open API: Azure Storage(저장소), Computer Vision API(이미지 분석), Naver Papago NMT번역(인공신경망 기반 기계번역), 어플리케이션(클라이언트)으로 수신된 사진파일을 분석한 영어 텍스트를 한글 텍스트로 번역하여 재전송
 
 #### 클라이언트
 (어플리케이션)
-▷ 사용 언어: 자바
-▷ 개발 환경: Android Studio
-▷ 사용Open API: Google Speech API(TTS)
-▷ HttpURLConnection(통신)데이터(NULL) 값을 서버로 전송, 서버로부터 수신한 미세먼지 상태 텍스트를 음성으로 제공
-▷ 사용Open API: Google Geocoder(GPS, NET), Google Speech API(TTS)
-▷ HttpURLConnection(통신)현재 위치를 서버로 전송, 서버로부터 수신한 재난 예비 특보 텍스트를 음성으로 제공, 미세먼지 기상 현황 음성 제공
-▷ 사용 Open API: Google Speech API(TTS), Google Speech API(STT), Retrofit2 Library, 시각장애인의 음성을 인식하여 촬영된 사진을 서버로 전송, 서버에서 가공된 한글 텍스트를 수신하여 음성으로 제공, 재난문자 음성 제공 
+- 사용 언어: 자바
+- 개발 환경: Android Studio
+- 사용Open API: Google Speech API(TTS)
+- HttpURLConnection(통신)데이터(NULL) 값을 서버로 전송, 서버로부터 수신한 미세먼지 상태 텍스트를 음성으로 제공
+- 사용Open API: Google Geocoder(GPS, NET), Google Speech API(TTS)
+- HttpURLConnection(통신)현재 위치를 서버로 전송, 서버로부터 수신한 재난 예비 특보 텍스트를 음성으로 제공, 미세먼지 기상 현황 음성 제공
+- 사용 Open API: Google Speech API(TTS), Google Speech API(STT), Retrofit2 Library, 시각장애인의 음성을 인식하여 촬영된 사진을 서버로 전송, 서버에서 가공된 한글 텍스트를 수신하여 음성으로 제공, 재난문자 음성 제공 
 
 

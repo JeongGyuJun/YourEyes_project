@@ -11,7 +11,7 @@
 3. 국내 외 여러 요건으로 발생하는 미세먼지 주의, 경보 횟수가 점차 	늘어남에 따라 당일 미세먼지 경보를 손쉽게 알 수 있도록 미세먼지 	발령 현황을 공공기관 데이터 포털에서 제공하는 API를 사용하여 저	장 후 사용자의 위치에 따라 음성으로 제공하는 것을 목표로 함.
 
 ### 개발 환경 및 사용 API/TOOL
-
+![image](https://user-images.githubusercontent.com/45933225/74583753-aae2ab00-500d-11ea-8c81-8c26bc63ad36.png)
 
 
 - 아래 항목 순서
@@ -40,3 +40,7 @@
 ▷ HttpURLConnection(통신)현재 위치를 서버로 전송, 서버로부터 수신한 재난 예비 특보 텍스트를 음성으로 제공, 미세먼지 기상 현황 음성 제공
 ▷ 사용 Open API: Google Speech API(TTS), Google Speech API(STT), Retrofit2 Library, 시각장애인의 음성을 인식하여 촬영된 사진을 서버로 전송, 서버에서 가공된 한글 텍스트를 수신하여 음성으로 제공, 재난문자 음성 제공 
 
+
+![image](https://user-images.githubusercontent.com/45933225/74583778-f1380a00-500d-11ea-8afc-c180fcd5129e.png)
+![image](https://user-images.githubusercontent.com/45933225/74583780-fd23cc00-500d-11ea-8511-d48e63bddde3.png)
+![image](https://user-images.githubusercontent.com/45933225/74583782-00b75300-500e-11ea-949d-3fb7947a78b2.png)

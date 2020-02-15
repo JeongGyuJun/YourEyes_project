@@ -1,0 +1,105 @@
+<html>
+<head>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js">
+                </script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<div style="margin:1rem;">
+	 <label >Write Image URL:</label>
+	 <input type="text" id="image-url">
+	 <button id="describe-btn" >Describe</button>
+<form id="ajaxform" action="/file_upload" method="POST" enctype="multipart/form-data"> 
+<input type="file" name="fileAjax" /> 
+<input type="button" id="btn" value="전송" /> 
+</form>
+	 <label >지역명 입력 :</label>
+         <input type="text" id="area-name">
+         <button id="area-number-btn" >조회</button>				
+	</div>
+
+		<div style="margin:1rem;">
+		<label id="result-text"></label>
+		</div>
+	
+	 		 <div style="margin:1rem;">
+               		 <label id="result-upload"></label>
+       			 </div>
+	
+	 <div style="margin:1rem;">
+         <label id="result-disaster"></label>
+         </div>
+
+
+	 <script>
+		function describeImage(image_url){
+			$.ajax({
+				type: "POST",
+				url: "http://52.231.67.53:8080/describe_image",
+				data: image_url,
+				contentType: false,
+				processData: false,
+				success: function(result){
+					$("label#result-text").text(result.result)
+				}		
+				});
+		}
+
+            		$( "#describe-btn" ).click(function() {
+			image_url = $("input#image-url").val();
+  			describeImage(image_url);
+                    });
+
+	</script>
+
+        
+<script>
+function ajaxFileUpload(formData){
+                $.ajax({
+                    url: "http://52.231.67.53:8080/file_upload",
+                    data: formData,
+		    dataType: "json",
+                    processData: false,
+                    contentType: false,
+                    type: "POST",
+                    success: function(result){
+                         $("label#result-upload").text(result.result)
+                    }
+                  });
+                }
+
+  $("#btn").click(function(){
+             var formData = new FormData();
+             formData.append("fileAjax", $("input[name=fileAjax]")[0].files[0]);    $
+	     ajaxFileUpload(formData);
+        });
+
+</script>
+
+<script>
+                function areanumber(area_name){
+                        $.ajax({
+                                type: "POST",
+                                url: "http://52.231.67.53:8080/request_disaster",
+                                data: area_name,
+                                contentType: false,
+                                processData: false,
+                                success: function(result){
+                                        $("label#result-disaster").text(result)
+                                }
+                                });
+                }
+
+                        $( "#area-number-btn" ).click(function() {
+                        area_name = $("input#area-name").val();
+                        areanumber(area_name);
+                    });
+
+        </script>
+
+</body>
+</html>

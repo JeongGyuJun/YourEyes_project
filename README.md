@@ -3,6 +3,7 @@
 
 ## 시각장애인을 위한 보행사고 예방 및 재난문자 알림이 
 
+![image](https://user-images.githubusercontent.com/45933225/74583778-f1380a00-500d-11ea-8afc-c180fcd5129e.png)
 - 과제 유형 : PBL(Problem-Based-Learning 약칭 PBL)
 - 과제 기간 : 2019.01.11. ~ 2019.01.31
 - 과제 목표
@@ -15,11 +16,13 @@
 
 
 - 아래 항목 순서
-기능
-서버/클라이언트
-사용 언어 및 개발 환경
-세부 수행 내역
-이미지 분석을 통한 상황 알림이
+1. 서버/클라이언트
+2. 사용 언어 및 개발 환경
+3. 세부 수행 내역
+4. 이미지 분석을 통한 상황 알림이
+
+![image](https://user-images.githubusercontent.com/45933225/74583780-fd23cc00-500d-11ea-8511-d48e63bddde3.png)
+![image](https://user-images.githubusercontent.com/45933225/74583782-00b75300-500e-11ea-949d-3fb7947a78b2.png)
 
 #### 서버 
 ▷ 사용 언어: 파이썬 
@@ -41,6 +44,3 @@
 ▷ 사용 Open API: Google Speech API(TTS), Google Speech API(STT), Retrofit2 Library, 시각장애인의 음성을 인식하여 촬영된 사진을 서버로 전송, 서버에서 가공된 한글 텍스트를 수신하여 음성으로 제공, 재난문자 음성 제공 
 
 
-![image](https://user-images.githubusercontent.com/45933225/74583778-f1380a00-500d-11ea-8afc-c180fcd5129e.png)
-![image](https://user-images.githubusercontent.com/45933225/74583780-fd23cc00-500d-11ea-8511-d48e63bddde3.png)
-![image](https://user-images.githubusercontent.com/45933225/74583782-00b75300-500e-11ea-949d-3fb7947a78b2.png)

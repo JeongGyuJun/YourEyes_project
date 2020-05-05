@@ -24,7 +24,7 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/45933225/81108177-40c60c00-8f53-11ea-9b0e-c8274a14cf97.png" width="50%"></p>
 
-=> 위와 같은 기능들 이용을 서버에서도 통신 상태 
+=> 위와 같은 기능들 이용을 서버에서도 통신 상태 확인 
 
 ### 개발 환경 및 사용 API/TOOL
 

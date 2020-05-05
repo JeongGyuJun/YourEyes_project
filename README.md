@@ -3,7 +3,8 @@
 
 ## 시각장애인을 위한 보행사고 예방 및 재난문자 알림이 
 
-![image](https://user-images.githubusercontent.com/45933225/74583778-f1380a00-500d-11ea-8afc-c180fcd5129e.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45933225/74583778-f1380a00-500d-11ea-8afc-c180fcd5129e.png" width="75%"></p>
+
 - 과제 유형 : PBL(Problem-Based-Learning 약칭 PBL)
 - 과제 기간 : 2019.01.11. ~ 2019.01.31
 - 과제 목표
@@ -12,13 +13,15 @@
 3. 국내 외 여러 요건으로 발생하는 미세먼지 주의, 경보 횟수가 점차 	늘어남에 따라 당일 미세먼지 경보를 손쉽게 알 수 있도록 미세먼지 	발령 현황을 공공기관 데이터 포털에서 제공하는 API를 사용하여 저	장 후 사용자의 위치에 따라 음성으로 제공하는 것을 목표로 함.
 
 ### 개발 환경 및 사용 API/TOOL
-![image](https://user-images.githubusercontent.com/45933225/74583929-0ca41480-5010-11ea-9f57-b89cbd1c365d.png)
+
+<p align="center"><img src="https://user-images.githubusercontent.com/45933225/74583929-0ca41480-5010-11ea-9f57-b89cbd1c365d.png" width="50%"></p>
 
 - 아래 항목 순서
-1. 서버/클라이언트
-2. 사용 언어 및 개발 환경
-3. 세부 수행 내역
-4. 이미지 분석을 통한 상황 알림이
+
+		1. 서버/클라이언트
+		2. 사용 언어 및 개발 환경
+		3. 세부 수행 내역
+		4. 이미지 분석을 통한 상황 알림이
 
 #### 서버 
 - 사용 언어: 파이썬 

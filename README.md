@@ -28,7 +28,7 @@
 
 ### 개발 환경 및 사용 API/TOOL
 
-<p align="center"><img src="https://user-images.githubusercontent.com/45933225/74583929-0ca41480-5010-11ea-9f57-b89cbd1c365d.png" width="50%"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/45933225/74583929-0ca41480-5010-11ea-9f57-b89cbd1c365d.png" width="75%"></p>
 
 - 아래 항목 순서
 
